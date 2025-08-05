@@ -18,3 +18,11 @@ pip install opencv-python
 ~~~bash!
 python3 camera.py
 ~~~
+## もしPC内蔵のカメラが起動した場合
+ - 以下のコマンドを実行
+~~~bash!
+pip install cv2_enumerate_cameras
+python -m cv2_enumerate_cameras
+~~~
+ - 出力結果からRealSense RGBのindex番号を確認
+ - cap = cv2.VideoCapture(ここの番号を変更)
